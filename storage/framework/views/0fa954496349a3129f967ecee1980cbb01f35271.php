@@ -864,10 +864,11 @@
                           <input class="form-control" type="number" name="adminTelephone" id="adminTelephone">
                         </div>
                       </div>
+
                        <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="form-group">
                           <label>Duties:</small><span>*</span>  </label>
-                          <select class="btn btn-primary dropdown-toggle"  name="adminState"  id="adminState">
+                          <select class="btn btn-primary dropdown-toggle" multiple name="adminState"  id="adminState">
                             <option value="" selected="selected"  >:: Select One ::</option>
                             <option value="Web Design">Web Design</option>
                             <option value="Web App">Web App</option>
