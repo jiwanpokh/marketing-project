@@ -12,7 +12,7 @@
 <div class="col-md-8 col-sm-12 col-xs-12">
   <div class="panel-group">
     <div class="title">
-      <h2>Marketing Day Book jiwan</h2>
+      <h2>Marketing Day Book</h2>
     </div>
 
     <form id="requestdomain-form" action="https://register.com.np/userdomain" method="Post">
