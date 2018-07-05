@@ -21,5 +21,6 @@ Route::get('project','MarketingContoller@project');
 
 Auth::routes();
 
-Route::get('/','HomeController@index');
+Route::get('/','HomeController@index')->name('index');
+Route::post('/','HomeController@inasda');
 
