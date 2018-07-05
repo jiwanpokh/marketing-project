@@ -36,7 +36,7 @@
 
       <div class="reg-block">
         <fieldset>
-          <legend><div class="class="panel-heading">   Clients Details</div></legend>
+          <legend><div class="class="panel-heading">Clients Details</div></legend>
           <!--<p class="info-help-block">Domain owner's detail</p>-->
 
           <div class="row">

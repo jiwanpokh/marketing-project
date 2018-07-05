@@ -296,7 +296,7 @@ desired effect
         <li><a href="#"><i class="fa glyphicon glyphicon-user"></i> <span>Clients</span></a></li>
         <li><a href="#"><i class="fa fa-user-plus"></i> <span>Potential Clients</span></a></li>
         <li><a href="#"><i class="fa fa-trophy"></i> <span>Completed Projects</span></a></li>
-        <li><a href="#"><i class="fa fa-address-book"></i> <span>CRM</span></a></li>
+        <li><a href="{{url('CRM')}}"><i class="fa fa-address-book"></i> <span>CRM</span></a></li>
        <!--  <li><a href="#"><i class="fa fa-microchip"></i> <span>Data Bank</span></a></li>  
         <li><a href="#"><i class="fa fa-meetup"></i> <span>smthng</span></a></li> 
         <li><a href="#"><i class="fa fa-arrows"></i> <span>Performance</span></a></li> 
@@ -349,6 +349,7 @@ desired effect
             @yield('content')
             @yield('pagecontent')   
             @yield('marketingcform')
+            @yield('crm')
       
       <!--------------------------
         | Your Page Content Here |

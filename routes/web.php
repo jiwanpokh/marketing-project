@@ -18,7 +18,8 @@ Route::get('admin','MarketingContoller@index');
 Route::get('marketing','MarketingContoller@create');
 Route::get('delaylist','MarketingContoller@destroy');
 Route::get('project','MarketingContoller@project');
-
+Route::get('CRM','MarketingContoller@crm');
+Route::POST('CRM2','MarketingController@crm');
 Auth::routes();
 
 Route::get('/','HomeController@index');
