@@ -64,6 +64,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="js/customjquery.js" type="text/javascript"></script>
+  <!-- <script src="jquery.js"></script> -->
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -496,9 +499,10 @@ desired effect
         
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
         <script src="js/AdminLTE/dashboard.js" type="text/javascript"></script>  
-       <script> <link rel="stylesheet" href="{{asset('/bower_components/admin-lte/dist/js/adminlte.js')}}"></script>
-     <script><link rel="stylesheet" href="{{asset('/bower_components/admin-lte/dist/js/adminlte.min.js')}}"></script>
+       <script src="{{asset('/bower_components/admin-lte/dist/js/adminlte.js')}}"></script>
+     <script src="{{asset('/bower_components/admin-lte/dist/js/adminlte.min.js')}}"></script>
      <script><link rel="stylesheet" href="{{asset('/bower_components/admin-lte/dist/js/demo.js')}}"></script>
+     
 
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
