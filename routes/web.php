@@ -23,5 +23,5 @@ Route::POST('CRM2','MarketingController@crm');
 Auth::routes();
 
 Route::get('/','HomeController@index')->name('index');
-Route::post('/','HomeController@inasda');
+Route::post('/','MarketingFormController@marketingform')->name('form');
 

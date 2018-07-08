@@ -13,7 +13,6 @@ $(document).ready(function() {
 
     	$("#othercountry").remove();
     }
-       	// $("#othercountryfield").append('<input type="text" name="jiwan" id="othercountry">');
        }); 
 
 	$("#duties").change(function(){
@@ -29,6 +28,6 @@ $(document).ready(function() {
 
     	$("#duty").remove();
     }
-       	// $("#othercountryfield").append('<input type="text" name="jiwan" id="othercountry">');
+       	
        });
 });

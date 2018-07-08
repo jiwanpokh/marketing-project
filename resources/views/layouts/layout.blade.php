@@ -67,6 +67,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   <script src="js/customjquery.js" type="text/javascript"></script>
   <!-- <script src="jquery.js"></script> -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <!--
 BODY TAG OPTIONS:
