@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use App\CRM;
 
 class MarketingContoller extends Controller
 {
@@ -43,21 +44,6 @@ class MarketingContoller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function crmdb(Request $request)
-    {
-        $validatedData = $request->validate([
-        'name' => 'required|unique:posts|max:255',
-        'address' => 'required',
-        'email'=> 'required|email',
-        'position'=> 'required|max:255',
-        'dob'=>'required|date',
-        'gender'=>'required',
-        'anniversary'=>'required',
-        'married'=>'required',
-        'mobile'=>'required|numeric|max:10'
-    ]);
-
-    }
 
     /**
      * Display the specified resource.

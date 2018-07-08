@@ -321,6 +321,7 @@ class ComposerStaticInite5da534607b2e32a31797f2cbd23d8ba
 
     public static $classMap = array (
         'App\\CRM' => __DIR__ . '/../..' . '/app/CRM.php',
+        'App\\Client' => __DIR__ . '/../..' . '/app/Client.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
