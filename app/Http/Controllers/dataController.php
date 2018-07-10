@@ -1,0 +1,45 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\View\Middleware\ShareErrorsFromSession;
+use App\CRM;
+
+class dataController extends Controller
+{
+    public function crmdb(Request $request)
+   		{
+   			$inputdata=request()->validate
+   			([
+        		'name' => 'required|max:255',
+        		'address' => 'required',
+        		'email'=> 'required|email',
+        		'position'=> 'required|max:255',
+        		'dob'=>'required|date',
+        		'gender'=>'required',
+        		'anniversary'=>'required',
+        		'married'=>'required',
+        		'mobile'=>'numeric|max:10'
+   			 ]); 
+        	$inputdata=$request->all(); //$request->get(''name); $inputdata['name']
+       		 							//return $inputdata['name'];
+
+
+        	$crm = new CRM();
+        	$crm->name = $inputdata['name']; //$request->get('name')
+        	$crm->address = $inputdata['address'];
+        	$crm->email = $inputdata['email']; //$request->get('name')
+        	$crm->position = $inputdata['position'];
+        	$crm->dob = $inputdata['dob']; //$request->get('name')
+        	$crm->gender = $inputdata['gender'];
+        	$crm->anniversary = $inputdata['anniversary']; //$request->get('name')
+        	$crm->married = $inputdata['married'];
+        	$crm->mobile = $inputdata['mobile'];
+
+        	$crm->save();
+        	return back()->with('success','User Created Successfully');
+    	}
+
+}
