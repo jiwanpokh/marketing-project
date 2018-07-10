@@ -19,9 +19,9 @@ class dataController extends Controller
         		'position'=> 'required|max:255',
         		'dob'=>'required|date',
         		'gender'=>'required',
-        		'anniversary'=>'required',
+        		'anniversary'=>'required|date',
         		'married'=>'required',
-        		'mobile'=>'numeric|max:10'
+        		'mobile'=>'numeric|min:10'
    			 ]); 
         	$inputdata=$request->all(); //$request->get(''name); $inputdata['name']
        		 							//return $inputdata['name'];

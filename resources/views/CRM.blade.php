@@ -1,8 +1,6 @@
 
 @extends('layouts.layout')       
-@section('content')
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+@section('crm')
     <section class="content-header">
       <h1>
         Client Relation Management Form
@@ -76,7 +74,7 @@
                     <div class="col-md-3">
                       <label for="gender"> Gender </label>
                     </div>
-                        <span style="padding-left: 10px;"> 
+                        <span style="padding-left: 15px;"> 
                           <label style="font-style: all; font-weight: 10;" for="Gender">Male
                             <input type="radio" class="form-control" id="male" name="gender" value="male">
                           </label>
@@ -93,7 +91,7 @@
                         </span>
                     </div>
                       @if ($errors->has('gender'))
-                          <span class="text-danger" style="padding-left:100px;"> {{ $errors->first('gender')}}</span>
+                          <span class="text-danger" style="padding-left:130px;"> {{ $errors->first('gender')}}</span>
                       @endif
                   </div>
                   <div class="form-group"> 
@@ -101,7 +99,7 @@
                     <div class="col-md-3">
                       <label for="Married"> Married </label>
                     </div>
-                      <span style="padding-left: 10px;"> 
+                      <span style="padding-left: 15px;"> 
                          <label style="font-style: all; font-weight: 10;" for="Married" >Yes
                           <input type="radio" class="form-control" id="yes" name="married" value="yes">
                          </label> 
@@ -112,9 +110,10 @@
                         </label>
                       </span>
                     </div>
-                     @if($errors->has('married'))
-                        <span class="text-danger" style="padding-left: 100px;"> {{ $errors->first('married')}}</span>
-                      @endif
+                    @if($errors->has('married'))
+                      <span class="text-danger" style="padding-left: 130px;">
+                        {{ $errors->first('married')}}</span>
+                    @endif
                   </div>
                   </div>
                
@@ -125,7 +124,7 @@
                       <label for="Moblie">Mobile</label>
                     </div>
                     <div class="col-md-8">
-                      <input type="text" class="form-control" id="mobile" placeholder="Mobile Number" name="mobile">
+                      <input type="Number" class="form-control" id="mobile" placeholder="Mobile Number" name="mobile">
                       @if($errors->has('mobile'))
                         <span class="text-danger"> {{ $errors->first('mobile')}}</span>
                       @endif
@@ -166,7 +165,7 @@
                       <label for="Anniversary">Anniversary</label>
                     </div>
                     <div class="col-md-8">
-                      <input type="text" class="form-control" id="anniversary" placeholder="Anniversary Date if married" name="anniversary">
+                      <input type="date" class="form-control" id="anniversary" placeholder="Anniversary Date if married" name="anniversary">
                       @if( $errors->has('anniversary'))
                         <span class="text-danger"> {{  $errors->first('anniversary')}} </span>
                       @endif
@@ -182,6 +181,5 @@
           </div>
         </div>
       </section>
-    </div>
-@endsection()
+@endsection('crm')
           <!-- /.box -->
