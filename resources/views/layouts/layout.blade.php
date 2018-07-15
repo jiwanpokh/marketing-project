@@ -12,23 +12,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- //new phpstrom css -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="{{asset('css/bootstrap.min.css" rel="stylesheet')}}" type="text/css" />
         <!-- font Awesome -->
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet')}}" type="text/css" />
         <!-- Ionicons -->
-        <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="{{asset('css/ionicons.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- Morris chart -->
-        <link href="css/morris/morris.css" rel="stylesheet" type="text/css" />
+        <link href="{{asset('css/morris/morris.css')}}" rel="stylesheet" type="text/css" />
         <!-- jvectormap -->
-        <link href="css/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+        <link href="{{asset('css/jvectormap/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet" type="text/css" />
         <!-- fullCalendar -->
-        <link href="css/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+        <link href="{{asset('css/fullcalendar/fullcalendar.css')}}" rel="stylesheet" type="text/css" />
         <!-- Daterange picker -->
-        <link href="css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+        <link href="{{asset('css/daterangepicker/daterangepicker-bs3.css')}}" rel="stylesheet" type="text/css" />
         <!-- bootstrap wysihtml5 - text editor -->
-        <link href="css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+        <link href="{{asset('css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
-        <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
+        <link href="asset('css/AdminLTE.css')}}" rel="stylesheet" type="text/css" />
 
 
   <link rel="stylesheet" href="{{asset('bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
@@ -56,7 +56,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <![endif]-->
 
   <!-- Google Font -->
- <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <link href="{{asset('//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css')}}" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
@@ -67,7 +67,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   <script src="js/customjquery.js" type="text/javascript"></script>
   <!-- <script src="jquery.js"></script> -->
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="{{asset('//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css')}}" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
@@ -374,7 +374,7 @@ desired effect
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+    <strong>Copyright &copy 2016 <a href="#">Company</a>.</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->
@@ -391,7 +391,7 @@ desired effect
         <h3 class="control-sidebar-heading">Recent Activity</h3>
         <ul class="control-sidebar-menu">
           <li>
-            <a href="javascript:;">
+            <a href="javascript:">
               <i class="menu-icon fa fa-birthday-cake bg-red"></i>
 
               <div class="menu-info">
@@ -407,7 +407,7 @@ desired effect
         <h3 class="control-sidebar-heading">Tasks Progress</h3>
         <ul class="control-sidebar-menu">
           <li>
-            <a href="javascript:;">
+            <a href="javascript:">
               <h4 class="control-sidebar-subheading">
                 Custom Template Design
                 <span class="pull-right-container">
@@ -473,35 +473,35 @@ desired effect
         <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 
   <!-- jQuery 2.0.2 -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="{{asset('http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')}}"></script>
         <!-- jQuery UI 1.10.3 -->
-        <script src="js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+        <script src="{{asset('js/jquery-ui-1.10.3.min.js" type="text/javascript')}}"></script>
         <!-- Bootstrap -->
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="{{asset('js/bootstrap.min.js" type="text/javascript')}}"></script>
         <!-- Morris.js charts -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-        <script src="js/plugins/morris/morris.min.js" type="text/javascript"></script>
+        <script src="{{asset('//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js')}}"></script>
+        <script src="{{asset('js/plugins/morris/morris.min.js" type="text/javascript')}}"></script>
         <!-- Sparkline -->
-        <script src="js/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+        <script src="{{asset('js/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript')}}"></script>
         <!-- jvectormap -->
-        <script src="js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
-        <script src="js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+        <script src="{{asset('js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript')}}"></script>
+        <script src="{{asset('js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript')}}"></script>
         <!-- fullCalendar -->
-        <script src="js/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+        <script src="{{asset('js/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript')}}"></script>
         <!-- jQuery Knob Chart -->
-        <script src="js/plugins/jqueryKnob/jquery.knob.js" type="text/javascript"></script>
+        <script src="{{asset('js/plugins/jqueryKnob/jquery.knob.js" type="text/javascript')}}"></script>
         <!-- daterangepicker -->
-        <script src="js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+        <script src="{{asset('js/plugins/daterangepicker/daterangepicker.js" type="text/javascript')}}"></script>
         <!-- Bootstrap WYSIHTML5 -->
-        <script src="js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
+        <script src="{{asset('js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}" type="text/javascript"></script>
         <!-- iCheck -->
-        <script src="js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+        <script src="{{asset('js/plugins/iCheck/icheck.min.js')}}" type="text/javascript"></script>
 
         <!-- AdminLTE App -->
-        <script src="js/AdminLTE/app.js" type="text/javascript"></script>
+        <script src="{{asset('js/AdminLTE/app.js" type="text/javascript')}}"></script>
         
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-        <script src="js/AdminLTE/dashboard.js" type="text/javascript"></script>  
+        <script src="{{asset('js/AdminLTE/dashboard.js" type="text/javascript')}}"></script>  
        <script src="{{asset('/bower_components/admin-lte/dist/js/adminlte.js')}}"></script>
      <script src="{{asset('/bower_components/admin-lte/dist/js/adminlte.min.js')}}"></script>
      <script><link rel="stylesheet" href="{{asset('/bower_components/admin-lte/dist/js/demo.js')}}"></script>

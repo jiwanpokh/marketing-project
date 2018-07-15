@@ -23,7 +23,9 @@ Route::post('crmdb','dataController@crmdb');
 
 Auth::routes();
 
-Route::get('/marketing','MarketingFormController@formfield');
+Route::get('/marketing','MarketingFormController@formfield')->middleware('auth');
 Route::post('/marketing','MarketingFormController@marketingform')->name('form');
 Route::post('test','TestController@testform');
+
+Route::get('data','MarketingFormController@data');
 

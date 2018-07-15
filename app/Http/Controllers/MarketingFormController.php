@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\marketingform;
+use App\marketingform;
 
 class MarketingFormController extends Controller
 {
@@ -15,13 +15,14 @@ class MarketingFormController extends Controller
     {
 	//return $request->all();
 
-    	$formdata=$request->validate([
-    		'adminOrganization'=>'required|max:40',
-    		'adminCountry'=> 'required|max:10',
-    		'adminothercountry'=>'required|max:10|unique:posts',
-    		'adminState'=>'required|max:10|',
-    		'adminCity'=>'required|max:10',
-    		'adminAddress'=>'required|max:10',
+    	$formdata=request()->validate
+    	 ([
+    		'adminOrganization'=>'required|max:400',
+    		'adminCountry'=> 'required|max:100',
+    		'adminothercountry'=>'nullable|max:100',
+    		'adminState'=>'required|max:100|',
+    		'admincity'=>'required|max:100',
+    		'adminAddress'=>'required|max:100',
     		'adminEmail'=>'required',
     		'adminindustry'=>'required',
     		'representative'=>'required',
@@ -32,18 +33,19 @@ class MarketingFormController extends Controller
     		'contactno'=>'required',
     		'duties'=>'required',
     		'clienttype'=>'required',
-    		'dutiesotherfield'=>'required'
+    		'dutiesotherfield'=>'nullable|max:10'
     	]);
-    	print_r('$formdata');
-    	dd($formdata);
-    	$marktngfrm = new marketingform();
+    	 
     	$formdata=$request->all();
-    	$marktngfrm->Organization_Name =$formdata['adminOrganization'];
+    	$marktngfrm = new marketingform();
+       	$marktngfrm->Organization_Name =$formdata['adminOrganization'];
     	$marktngfrm->Country_Name =$formdata['adminCountry'];
     	$marktngfrm->Other_Country= $formdata['adminothercountry'];
     	$marktngfrm->State= $formdata['adminState'];
     	$marktngfrm->city=$formdata['admincity'];
-    	$marktngfrm->Email=$formdata['Email'];
+    	$marktngfrm->Admin_Address=$formdata['adminAddress'];
+    	$marktngfrm->industry=$formdata['adminindustry'];
+    	$marktngfrm->Email=$formdata['adminEmail'];
     	$marktngfrm->representative= $formdata['representative'];
     	$marktngfrm->followup=$formdata['followup'];
     	$marktngfrm->note=$formdata['note'];
@@ -57,6 +59,10 @@ class MarketingFormController extends Controller
 
 
 
+    }
+    public function data() {
+
+    return marketingform::all();
     }
 
 

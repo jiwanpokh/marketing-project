@@ -10,11 +10,9 @@ $(document).ready(function() {
 
     else
     {
-
     	$("#othercountry").remove();
     }
        }); 
-
 	$("#duties").change(function(){
 		
 		if($("#duties").val()=="other2"){
