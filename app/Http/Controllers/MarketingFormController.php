@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\marketingform;
+use DB;
 
 class MarketingFormController extends Controller
 {
@@ -63,6 +64,11 @@ class MarketingFormController extends Controller
     public function data() {
 
     return marketingform::all();
+    }
+    public function clients()
+    {
+        $clientdata = DB::table('marketingform')->get();
+        return view('clients',['clientdata'=> $clientdata]);
     }
 
 

@@ -299,7 +299,7 @@ desired effect
         <!-- Optionally, you can add icons to the links -->
         <li class="active"><a href="{{url('marketing')}}"><i class="fa glyphicon glyphicon-home"></i> <span>Dashboard</span></a></li>
         <li><a href="{{url('project')}}"><i class="fa fa-book"></i> <span>Projects</span></a></li>
-        <li><a href="#"><i class="fa glyphicon glyphicon-user"></i> <span>Clients</span></a></li>
+        <li><a href="{{url('clients')}}"><i class="fa glyphicon glyphicon-user"></i> <span>Clients</span></a></li>
         <li><a href="#"><i class="fa fa-user-plus"></i> <span>Potential Clients</span></a></li>
         <li><a href="#"><i class="fa fa-trophy"></i> <span>Completed Projects</span></a></li>
         <li><a href="{{url('crm')}}"><i class="fa fa-address-book"></i> <span>CRM</span></a></li>

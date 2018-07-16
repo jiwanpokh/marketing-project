@@ -27,5 +27,5 @@ Route::get('/marketing','MarketingFormController@formfield')->middleware('auth')
 Route::post('/marketing','MarketingFormController@marketingform')->name('form');
 Route::post('test','TestController@testform');
 
-Route::get('data','MarketingFormController@data');
+Route::get('clients','MarketingFormController@clients');
 
