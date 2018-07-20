@@ -20,12 +20,9 @@ Route::get('delaylist','MarketingContoller@destroy');
 Route::get('project','MarketingContoller@project');
 Route::get('crm','MarketingContoller@crm');
 Route::post('crmdb','dataController@crmdb');
-
 Auth::routes();
-
 Route::get('/marketing','MarketingFormController@formfield')->middleware('auth');
 Route::post('/marketing','MarketingFormController@marketingform')->name('form');
 Route::post('test','TestController@testform');
-
 Route::get('clients','MarketingFormController@clients');
 

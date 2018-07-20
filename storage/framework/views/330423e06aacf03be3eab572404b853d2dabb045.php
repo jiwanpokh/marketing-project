@@ -28,8 +28,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- bootstrap wysihtml5 - text editor -->
         <link href="<?php echo e(asset('css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')); ?>" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
-        <link href="asset('css/AdminLTE.css')}}" rel="stylesheet" type="text/css" />
-
+        <link href="<?php echo e(asset('/css/AdminLTE.css')); ?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo e(asset('css/datatable/dataTables.bootstrap.min.css')); ?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo e(asset('css/datatable/cssbootstrap.min.css')); ?>" rel="stylesheet" type="text/css" />
 
   <link rel="stylesheet" href="<?php echo e(asset('bower_components/bootstrap/dist/css/bootstrap.min.css')); ?>">
   <!-- Font Awesome -->
@@ -42,7 +43,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
    <link rel="stylesheet" href="<?php echo e(asset('/bower_components/admin-lte/dist/css/img/avatar.jpg')); ?>">
     
       
-     
+     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<link rel="stylesheet" type="text/css" href="/DataTables/datatables.css">
+ 
+<script type="text/javascript" charset="utf8" src="/DataTables/datatables.js"></script>
+
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect. -->
@@ -65,11 +72,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-  <script src="js/customjquery.js" type="text/javascript"></script>
+ <!--  <script src="js/customjquery.js" type="text/javascript"></script>
+  <script src="js/dataTables.bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/jquery-3.js" type="text/javascript"></script>
+  <script src="js/jquery.dataTables1.min.js" type="text/javascript"></script> -->
   <!-- <script src="jquery.js"></script> -->
   <link href="<?php echo e(asset('//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css')); ?>" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -360,9 +371,7 @@ desired effect
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
-
-
-    </section>
+            </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
@@ -496,6 +505,14 @@ desired effect
         <script src="<?php echo e(asset('js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')); ?>" type="text/javascript"></script>
         <!-- iCheck -->
         <script src="<?php echo e(asset('js/plugins/iCheck/icheck.min.js')); ?>" type="text/javascript"></script>
+
+
+          <script src="<?php echo e(asset('js/customjquery.js')); ?>" type="text/javascript"></script>
+  <script src="<?php echo e(asset('js/dataTables.bootstrap.min.js')); ?>" type="text/javascript"></script>
+  <script src="<?php echo e(asset('js/jquery-3.js')); ?>" type="text/javascript"}}></script>
+  <script src="<?php echo e(asset('js/jquery.dataTables1.min.js')); ?>" type="text/javascript"></script>
+
+
 
         <!-- AdminLTE App -->
         <script src="<?php echo e(asset('js/AdminLTE/app.js" type="text/javascript')); ?>"></script>

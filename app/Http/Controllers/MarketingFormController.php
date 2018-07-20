@@ -65,10 +65,16 @@ class MarketingFormController extends Controller
 
     return marketingform::all();
     }
+    
     public function clients()
     {
-        $clientdata = DB::table('marketingform')->get();
-        return view('clients',['clientdata'=> $clientdata]);
+        $clientdata = marketingform::all();
+
+        // $clientdata=marketingform::where('id',2);
+        // $clientdata=marketingform::findOrFail(2);
+        //return $clientdata;
+       // return view('clients',compact('clientdata'));
+        return view('clients')->with('clientdata',$clientdata);
     }
 
 
