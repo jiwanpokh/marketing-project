@@ -67,6 +67,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   <script src="js/customjquery.js" type="text/javascript"></script>
   <!-- <script src="jquery.js"></script> -->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -97,7 +100,7 @@ desired effect
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini"><b>C</b>SA</span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><b>CODESASTRA</b></span>
     </a>
@@ -299,7 +302,7 @@ desired effect
         <li><a href="#"><i class="fa glyphicon glyphicon-user"></i> <span>Clients</span></a></li>
         <li><a href="#"><i class="fa fa-user-plus"></i> <span>Potential Clients</span></a></li>
         <li><a href="#"><i class="fa fa-trophy"></i> <span>Completed Projects</span></a></li>
-        <li><a href="#"><i class="fa fa-address-book"></i> <span>CRM</span></a></li>
+        <li><a href="<?php echo e(url('crm')); ?>"><i class="fa fa-address-book"></i> <span>CRM</span></a></li>
        <!--  <li><a href="#"><i class="fa fa-microchip"></i> <span>Data Bank</span></a></li>  
         <li><a href="#"><i class="fa fa-meetup"></i> <span>smthng</span></a></li> 
         <li><a href="#"><i class="fa fa-arrows"></i> <span>Performance</span></a></li> 
@@ -352,6 +355,7 @@ desired effect
             <?php echo $__env->yieldContent('content'); ?>
             <?php echo $__env->yieldContent('pagecontent'); ?>   
             <?php echo $__env->yieldContent('marketingcform'); ?>
+            <?php echo $__env->yieldContent('crm'); ?>
       
       <!--------------------------
         | Your Page Content Here |

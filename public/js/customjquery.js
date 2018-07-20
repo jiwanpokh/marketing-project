@@ -5,7 +5,7 @@ $(document).ready(function() {
 		if($("#country").val()=="other"){
 
         //$("#othercountryfield").remove();
-        $("#othercountryfield").append('<input type="text" name="jiwan" id="othercountry" class="form-control">');
+        $("#othercountryfield").append('<input type="text" name="adminothercountry" id="othercountry" class="form-control">');
     }
 
     else
@@ -13,7 +13,6 @@ $(document).ready(function() {
 
     	$("#othercountry").remove();
     }
-       	// $("#othercountryfield").append('<input type="text" name="jiwan" id="othercountry">');
        }); 
 
 	$("#duties").change(function(){
@@ -21,7 +20,7 @@ $(document).ready(function() {
 		if($("#duties").val()=="other2"){
 
         //$("#othercountryfield").remove();
-        $("#dutiesfield").append('<input type="text" name="jiwan" id="duty" class="form-control">');
+        $("#dutiesfield").append('<input type="text" name="dutiesotherfield" id="duty" class="form-control">');
     }
 
     else
@@ -29,6 +28,6 @@ $(document).ready(function() {
 
     	$("#duty").remove();
     }
-       	// $("#othercountryfield").append('<input type="text" name="jiwan" id="othercountry">');
+       	
        });
 });

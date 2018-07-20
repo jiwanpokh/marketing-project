@@ -18,9 +18,12 @@ Route::get('admin','MarketingContoller@index');
 Route::get('marketing','MarketingContoller@create');
 Route::get('delaylist','MarketingContoller@destroy');
 Route::get('project','MarketingContoller@project');
+Route::get('crm','MarketingContoller@crm');
+Route::post('crmdb','dataController@crmdb');
 
 Auth::routes();
 
-Route::get('/','HomeController@index')->name('index');
-Route::post('/','HomeController@inasda');
+Route::get('/marketing','MarketingFormController@formfield');
+Route::post('/marketing','MarketingFormController@marketingform')->name('form');
+Route::post('test','TestController@testform');
 
