@@ -38,9 +38,6 @@
                         <span class="text-danger">{{ $errors->first('name') }}</span>
                     @endif
                    </div>
-                   <!-- @if ($errors->has('name'))
-                   <div class="error"> {{$errors->first('name')}}</div>
-                   @endif -->
                   </div>
                 </div>
                 <div class="form-group">
@@ -75,18 +72,15 @@
                       <label for="gender"> Gender </label>
                     </div>
                         <span style="padding-left: 15px;"> 
-                          <label style="font-style: all; font-weight: 10;" for="Gender">Male
-                            <input type="radio" class="form-control" id="male" name="gender" value="male">
+                          <label style="font-style: all; font-weight: 10;" for="Gender"> Male <span style="padding-left:10px;"> </span><input type="radio"  id="male" name="gender" value="male">
                           </label>
                       </span>
-                        <span style="padding-left: 30px;">
-                          <label style="font-style: all; font-weight: 10;"for="Gender">Female 
-                            <input type="radio"class="form-control"id="female" name="gender" value="female">
+                        <span style="padding-left: 30px;" >
+                          <label style="font-style: all; font-weight: 10;"for="Gender"> Female <span style="padding-left:10px;">  </span> <input type="radio" id="female" name="gender" value="female" >
                           </label>
                         </span>
-                        <span style="padding-left:20px;"> 
-                          <label style="font-style: all; font-weight: 10;"for="Gender">Other
-                            <input type="radio" class="form-control" id="Other" name="gender" value="other">
+                        <span style="padding-left:30px;"> 
+                          <label style="font-style: all; font-weight: 10;"for="Gender">Other<span style="padding-left:10px;"> </span> <input type="radio" id="Other" name="gender" value="other">
                           </label>
                         </span>
                     </div>
@@ -100,13 +94,11 @@
                       <label for="Married"> Married </label>
                     </div>
                       <span style="padding-left: 15px;"> 
-                         <label style="font-style: all; font-weight: 10;" for="Married" >Yes
-                          <input type="radio" class="form-control" id="yes" name="married" value="yes">
+                         <label style="font-style: all; font-weight: 10;" for="Married"> Yes <span style="padding-left:10px;"> </span> <input type="radio" id="yes" name="married" value="yes">
                          </label> 
-                       </span>
+                        </span>
                       <span style="padding-left:40px;"> 
-                        <label style="font-style: all; font-weight: 10;"for="Married">No  
-                          <input type="radio" class="form-control" id="no" name="married" value="no">
+                        <label style="font-style: all; font-weight: 10;"for="Married">No <span style="padding-left:10px;">  </span> <input type="radio" id="no" name="married" value="no">
                         </label>
                       </span>
                     </div>

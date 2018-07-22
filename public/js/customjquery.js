@@ -28,9 +28,4 @@ $(document).ready(function() {
     }
        	
        });
-
-    $(document).ready(function() {
-    $("#example").DataTable();
-    alert("jiawn");
-} );
 });

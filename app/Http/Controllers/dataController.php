@@ -25,9 +25,7 @@ class dataController extends Controller
    			 ]); 
         	$inputdata=$request->all(); //$request->get(''name); $inputdata['name']
        		 							//return $inputdata['name'];
-
-
-        	$crm = new CRM();
+            $crm = new CRM();
         	$crm->name = $inputdata['name']; //$request->get('name')
         	$crm->address = $inputdata['address'];
         	$crm->email = $inputdata['email']; //$request->get('name')
@@ -39,7 +37,11 @@ class dataController extends Controller
         	$crm->mobile = $inputdata['mobile'];
 
         	$crm->save();
-        	return back()->with('success','User Created Successfully');
+          
     	}
-
-}
+        public function crmview()
+        {
+            $crmdata = CRM::all();
+            return view('databaseval')->with('dbval',$crmdata);
+        }
+ }
