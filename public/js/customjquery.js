@@ -30,7 +30,12 @@ $(document).ready(function() {
        });
 
     $(document).ready(function() {
+
     $("#example").DataTable();
-    alert("jiawn");
+
 } );
+    $(document).ready(function() {
+    $("#example").DataTable();
+    });
+  
 });

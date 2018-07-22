@@ -19,7 +19,7 @@
             </tr>
         </thead>
         <tbody>
-        	@foreach($potentialcltdata as $pclient)
+        	@foreach($pclientdata as $pclient)
             <tr>
                 <td>{{$pclient->Organization_Name}}</td>
                 <td>{{$pclient->Country_Name}}</td>

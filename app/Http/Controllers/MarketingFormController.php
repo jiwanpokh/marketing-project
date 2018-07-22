@@ -68,13 +68,33 @@ class MarketingFormController extends Controller
     
     public function clients()
     {
-        $clientdata = marketingform::all();
+        $clientdata = marketingform::where('clienttype','client')->get();
 
         // $clientdata=marketingform::where('id',2);
         // $clientdata=marketingform::findOrFail(2);
         //return $clientdata;
        // return view('clients',compact('clientdata'));
         return view('clients')->with('clientdata',$clientdata);
+    }
+
+    public function potentialclients()
+    {
+        $clientdata = marketingform::where('clienttype','Potentialclients')->get();
+
+        // $clientdata=marketingform::where('id',2);
+        // $clientdata=marketingform::findOrFail(2);
+        //return $clientdata;
+       // return view('clients',compact('clientdata'));
+        return view('potentialclients')->with('pclientdata',$clientdata);
+    }
+    public function edit(){
+        
+    }
+    
+    public function delete($id)
+    {
+        $deletedata = marketingform::find($id)->delete();
+        return redirect('clients');
     }
 
 

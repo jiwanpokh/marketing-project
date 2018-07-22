@@ -25,4 +25,8 @@ Route::get('/marketing','MarketingFormController@formfield')->middleware('auth')
 Route::post('/marketing','MarketingFormController@marketingform')->name('form');
 Route::post('test','TestController@testform');
 Route::get('clients','MarketingFormController@clients');
+Route::get('potentialclientdata','MarketingFormController@potentialclients');
 
+Route::get('edit/{id}','MarketingFormController@edit');
+Route::post('edit/{id}','MarketingFormController@edited')->name('edit')
+Route::get('delete/{id}','MarketingFormController@delete')->name('delete');
