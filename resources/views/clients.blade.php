@@ -1,39 +1,52 @@
 @extends('layouts.layout')
 @section('content')
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    
+</head>
+<body>
+<table id="example" class="display" style="width:100%;margin-top:5000px;">
+        <thead>
+            <tr>
+                <th>Organization Name</th>
+                <th>City</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Contact No</th>
+                <th>Duties</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        	@foreach($clientdata as $client)
+            <tr>
+                <td>{{$client->Organization_Name}}</td>
+                <td>{{$client->Country_Name}}</td>
+                <td>{{$client->Admin_Address}}</td>
+                <td>{{$client->Email}}</td>
+                <td>{{$client->contactno}}</td>
+                <td>{{$client->duties}}</td>
 
-<table id="example" class="table table-striped table-bordered" style="width:100%>
-	<thead class="thead-dark">
-		<tr>
-			<th scope="col">id</th>
-			<th scope="col">Organization Name</th>
-			<th scope="col">Address</th>
-			<th scope="col">Email</th>
-			<th scope="col">Follow-Up</th>
-			<th scope="col">Note</th>
-			<th scope="col">Duty</th>
-			<th scope="col">Contact Us</th>
-		</tr>
-	</thead>
-	<tbody>
+             	<td><a href="{{route('delete',$client->id )}}" type="button" name="" value="Delete" class="btn btn-primary">DELETE</a>&nbsp &nbsp <a href="" type="button" value="Delete" name="otherbutton" class="btn btn-danger">EDIT</a></td>
+            </tr>
+            @endforeach
+            
+        </tbody>
+        <tfoot>
+          <tr>
+                <th>Organization Name</th>
+                <th>City</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Contact No</th>
+                <th>Duties</th>
+                <th>Action</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
 
-		@foreach($clientdata as $key=>$client)
-
-		<tr>
-
-			<th scope="row">{{$client->id}}</th>
-			<td>{{$client->Organization_Name}}</td>
-			<td>{{$client->Admin_Address}}</td>
-			<td>{{$client->Email}}</td>
-			<td>{{$client->followup}}</td>
-			<td>{{$client->note}}</td>
-			<td>{{$client->duties}}</td>
-			<td>{{$client->contactno}}</td>
-		</tr>
-		@endforeach
-	</tbody>
-</table>
-
-
-
-
-@endsection('content')
+</html>
+@endsection('content')	

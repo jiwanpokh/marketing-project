@@ -50,18 +50,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <link rel="stylesheet" type="text/css" href="/DataTables/datatables.css">
  
 <script type="text/javascript" charset="utf8" src="/DataTables/datatables.js"></script>
-
-  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
-        page. However, you can choose any other skin. Make sure you
-        apply the skin class to the body tag so the changes take effect. -->
   <link rel="stylesheet" href="/bower_components/admin-lte/dist/css/skins/skin-blue.min.css">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
 
   <!-- Google Font -->
  <link href="{{asset('//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css')}}" rel="stylesheet" id="bootstrap-css">
@@ -69,6 +58,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 <!------ Include the above in your HEAD tag ---------->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+     <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -81,6 +75,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link href="{{asset('//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css')}}" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
 
 </head>
 <!--
@@ -312,7 +308,7 @@ desired effect
         <li class="active"><a href="{{url('marketing')}}"><i class="fa glyphicon glyphicon-home"></i> <span>Dashboard</span></a></li>
         <li><a href="{{url('project')}}"><i class="fa fa-book"></i> <span>Projects</span></a></li>
         <li><a href="{{url('clients')}}"><i class="fa glyphicon glyphicon-user"></i> <span>Clients</span></a></li>
-        <li><a href="#"><i class="fa fa-user-plus"></i> <span>Potential Clients</span></a></li>
+        <li><a href="{{url('potentialclientdata')}}"><i class="fa fa-user-plus"></i> <span>Potential Clients</span></a></li>
         <li><a href="#"><i class="fa fa-trophy"></i> <span>Completed Projects</span></a></li>
         <li><a href="{{url('crm')}}"><i class="fa fa-address-book"></i> <span>CRM</span></a></li>
        <!--  <li><a href="#"><i class="fa fa-microchip"></i> <span>Data Bank</span></a></li>  
@@ -523,7 +519,8 @@ desired effect
        <script src="{{asset('/bower_components/admin-lte/dist/js/adminlte.js')}}"></script>
      <script src="{{asset('/bower_components/admin-lte/dist/js/adminlte.min.js')}}"></script>
      <script><link rel="stylesheet" href="{{asset('/bower_components/admin-lte/dist/js/demo.js')}}"></script>
-     
+     <script type="text/javascript">
+ 
 
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
