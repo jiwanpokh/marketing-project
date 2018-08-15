@@ -9,8 +9,10 @@
                 <th>Gender</th>
                 <th>Married</th>
                 <th>Mobile Number</th>
+                <th>Email </th>
                 <th>Date of Birth</th>
                 <th>Anniversary Date</th>
+                <th> Action </th>
             </tr>
         </thead>
         <tbody>
@@ -22,8 +24,12 @@
                 <td>{{ $data->gender}}</td>
                 <td>{{ $data->married}}</td>
                 <td>{{ $data->mobile}}</td>
+                <td> {{ $data->email}} </td>
                 <td>{{ $data->dob}}</td>
                 <td>{{ $data->anniversary}}</td>
+                <td> <a href="{{route ('delete1', $data->id)}}" type="button" name="delete" value="Delete" class="btn btn-primary"> Delete</a> &nbsp &nbsp
+                <a href="{{route ('edit1', $data->id)}}" type="button" name="edit" value    ="Edit" class= "btn btn-danger"> Edit</a>
+                </td>
             </tr>
             @endforeach
         </tbody>
@@ -36,6 +42,7 @@
                 <th>Gender</th>
                 <th>Married</th>
                 <th>Mobile Number</th>
+                <th>Email </th>
                 <th>Date of Birth</th>
                 <th>Anniversary Date</th>
             </tr>

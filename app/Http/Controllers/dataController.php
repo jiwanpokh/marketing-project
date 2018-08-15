@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Illuminate\Support\Facades\View;
 use App\CRM;
 
 class dataController extends Controller
@@ -37,11 +38,22 @@ class dataController extends Controller
         	$crm->mobile = $inputdata['mobile'];
 
         	$crm->save();
-          
+
     	}
-        public function crmview()
+    public function crmview()
         {
             $crmdata = CRM::all();
             return view('databaseval')->with('dbval',$crmdata);
         }
+    public function delete($id)
+    {
+        $crmdata = CRM::find($id)->delete();
+        return redirect('crmview');
+    }
+
+    public function edit($id)
+    {
+        $crmdata = CRM::find($id);
+        return redirect('crm');
+    }
  }

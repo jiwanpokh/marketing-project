@@ -24,12 +24,13 @@
             <tr>
                 <td>{{$client->Organization_Name}}</td>
                 <td>{{$client->Country_Name}}</td>
-                <td>{{$client->Admin_Address}}</td>
-                <td>{{$client->Email}}</td>
-                <td>{{$client->contactno}}</td>
-                <td>{{$client->duties}}</td>
+                <td> {{$client->Admin_Address}} </td>
+                <td> {{$client->Email}} </td>
+                <td> {{$client->contactno}} </td>
+                <td> {{$client->duties}} </td>
 
-             	<td><a href="{{route('delete',$client->id )}}" type="button" name="" value="Delete" class="btn btn-primary">DELETE</a>&nbsp &nbsp <a href="" type="button" value="Delete" name="otherbutton" class="btn btn-danger">EDIT</a></td>
+             	<td> <a href="{{route('delete',$client->id )}}" type="button" name="delete" value="Delete" class="btn btn-primary">DELETE</a>&nbsp &nbsp <a href="" type="button" value="Delete" name="edit" class="btn btn-danger">EDIT</a>
+            </td>
             </tr>
             @endforeach
             

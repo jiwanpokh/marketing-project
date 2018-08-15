@@ -16,7 +16,7 @@ class MarketingContoller extends Controller
      */
     public function index()
     {
-        return view('layout.layout');
+        return view('layouts.layout');
    }
     /**
      * Show the form for creating a new resource.

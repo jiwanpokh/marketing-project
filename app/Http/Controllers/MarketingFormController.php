@@ -87,7 +87,7 @@ class MarketingFormController extends Controller
        // return view('clients',compact('clientdata'));
         return view('potentialclients')->with('pclientdata',$clientdata);
     }
-    public function edit(){
+    public function edit($id){
         
     }
     

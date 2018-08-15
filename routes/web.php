@@ -29,5 +29,8 @@ Route::get('clients','MarketingFormController@clients');
 Route::get('potentialclientdata','MarketingFormController@potentialclients');
 
 Route::get('edit/{id}','MarketingFormController@edit');
-Route::post('edit/{id}','MarketingFormController@edited')->name('edit')
+Route::post('edit/{id}','MarketingFormController@edited')->name('edit');
 Route::get('delete/{id}','MarketingFormController@delete')->name('delete');
+
+Route::get('edit1/{id}','dataController@edit')->name('edit1');
+Route::get('delete1/{id}','dataController@delete')->name('delete1');
